@@ -9,8 +9,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # ================================
 
-# Make sure these .pkl files are in the same folder as app.py
-
 model_path = "model.pkl"
 vectorizer_path = "vectorizer.pkl"
 
@@ -92,7 +90,6 @@ unsafe_allow_html=True
 st.markdown('<div class="title">📰 Fake News Detection System</div>', unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Enter a news headline or paragraph to check if it's Real or Fake</div>", unsafe_allow_html=True)
 
-
 # ================================
 
 # 🧾 User Input
@@ -122,4 +119,3 @@ input_data = vectorizer.transform([user_input])
     except Exception as e:
         st.error(f"❌ Error during prediction: {e}")
 ```
-
