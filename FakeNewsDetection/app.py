@@ -1,18 +1,12 @@
-import streamlit as st
 import pickle
+import os
 
-# Load model and vectorizer
-model = pickle.load(open('model.pkl', 'rb'))
-vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
+# get current directory path
+current_dir = os.path.dirname(__file__)
 
-st.title("📰 Fake News Detection App")
+model_path = os.path.join(current_dir, 'model.pkl')
+vectorizer_path = os.path.join(current_dir, 'vectorizer.pkl')
 
-news = st.text_area("Enter the news text or title:")
+model = pickle.load(open(model_path, 'rb'))
+vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
-if st.button("Predict"):
-    transformed_text = vectorizer.transform([news])
-    prediction = model.predict(transformed_text)[0]
-    if prediction == '0':
-        st.error("🚫 This news seems **FAKE**.")
-    else:
-        st.success("✅ This news seems **REAL**.")
