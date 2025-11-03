@@ -125,4 +125,4 @@ if st.button("Detect", key="detect_btn"):
 
 # Footer
 st.markdown("---")
-st.markdown("Built by Karthik ♠ Model trained in Colab, ▼ Model Used LogisticRegression")
+st.markdown("Built by Karthik ♠ Model trained in Colab ▼ Model Used LogisticRegression")
