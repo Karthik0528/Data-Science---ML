@@ -90,7 +90,8 @@ unsafe_allow_html=True
 # ================================
 
 st.markdown('<div class="title">📰 Fake News Detection System</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Enter a news headline or paragraph to check if it's Real or Fake</div>', unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>Enter a news headline or paragraph to check if it's Real or Fake</div>", unsafe_allow_html=True)
+
 
 # ================================
 
