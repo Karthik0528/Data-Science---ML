@@ -6,7 +6,7 @@ An AI-based web app that predicts whether a given news headline or article is **
 
 ## 🚀 Live Demo
 
-👉 [Click here to try the app](#) *(Replace this link with your Streamlit Cloud app link after deployment)*
+👉 [[Click here to try the app](https://fakenewsdetection2.streamlit.app/)](#) *(Replace this link with your Streamlit Cloud app link after deployment)*
 
 ---
 
