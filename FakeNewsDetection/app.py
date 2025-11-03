@@ -125,4 +125,4 @@ if st.button("Detect", key="detect_btn"):
 
 # Footer
 st.markdown("---")
-st.markdown("Built by Karthik • Model trained in Colab • Make sure `model.pkl` and `vectorizer.pkl` are the correct pickled objects.")
+st.markdown("Built by Karthik • Model trained in Colab •")
